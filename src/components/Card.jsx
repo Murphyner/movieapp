@@ -4,7 +4,7 @@ function Card({ item }) {
     const { title, posterUrl, plot, id } = item;
 
     return (
-        <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-[530px] overflow-hidden">
+        <div className="bg-white border w-full md:w-6/12 lg:w-4/12 xl:w-3/12 border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-[530px] overflow-hidden">
             <Link to={`/movie/${id}`}>
                 <img className="rounded-t-lg w-[70%] h-[60%] mx-auto my-2" src={posterUrl} alt={title} />
             </Link>
