@@ -22,7 +22,7 @@ function Main({movies ,genres}) {
     return (
       <div className="flex justify-center flex-col"> 
         <div className="container py-5 flex mx-auto">
-          <div className="w-[80%] grid grid-rows-3 grid-cols-4 gap-2">
+          <div className="w-[80%] flex flex-wrap">
             {selectedMovie?.slice(start, currentOne * x).map((item, i) => <Card item={item} key={i} />) }
           </div>
           <Aside genres={genres} movies={movies} setFiltered={setFiltered}  />
